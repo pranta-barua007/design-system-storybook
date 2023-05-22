@@ -8,7 +8,7 @@ const meta: Meta<typeof IconButton> = {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Prantab/IconButton',
+  title: 'Prantab/Icon Button',
   component: IconButton,
   tags: ['autodocs'],
 };
