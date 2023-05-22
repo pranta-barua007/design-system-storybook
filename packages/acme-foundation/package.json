@@ -1,0 +1,30 @@
+{
+  "name": "@acme/foundation",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build-tokens": "style-dictionary build --config sd.config.js",
+    "build": "yarn build-tokens && tsup src/index.ts src/tailwindPreset.config.js --format esm,cjs --dts",
+    "dev": "yarn build-tokens && tsup src/index.ts src/tailwindPreset.config.js --format esm,cjs --watch --dts",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@acme/tsconfig": "*",
+    "eslint": "^8.15.0",
+    "eslint-config-acme": "*",
+    "style-dictionary": "^3.8.0",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

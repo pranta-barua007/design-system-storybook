@@ -1,0 +1,41 @@
+{
+  "name": "@acme/core",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "watch-css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build": "yarn build-css && tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "yarn watch-css && tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@acme/foundation": "*",
+    "@acme/tsconfig": "*",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "eslint": "^8.15.0",
+    "eslint-config-acme": "*",
+    "react": "^18.1.0",
+    "tailwindcss": "^3.3.2",
+    "tsup": "^5.10.1",
+    "typescript": "^4.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}

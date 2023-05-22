@@ -1,0 +1,9 @@
+{
+  "extends": "@acme/tsconfig/react-library.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

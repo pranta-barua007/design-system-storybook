@@ -1,0 +1,11 @@
+{
+    "extends": "@acme/tsconfig/node16.json",
+    "compilerOptions": {
+      "baseUrl": "./stories",
+      "outDir": "./dist",
+      "downlevelIteration": true,
+      "jsx": "react-jsx"
+    },
+    "include": ["."],
+    "exclude": ["dist", "build", "node_modules"]
+  }
