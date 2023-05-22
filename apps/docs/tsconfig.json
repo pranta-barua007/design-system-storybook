@@ -2,7 +2,7 @@
     "extends": "@acme/tsconfig/node16.json",
     "compilerOptions": {
       "baseUrl": "./stories",
-      "outDir": "./dist",
+      "outDir": "./storybook-static",
       "downlevelIteration": true,
       "jsx": "react-jsx"
     },
