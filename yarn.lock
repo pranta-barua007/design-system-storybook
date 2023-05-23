@@ -32,7 +32,7 @@ __metadata:
   resolution: "@acme/docs@workspace:apps/docs"
   dependencies:
     "@acme/core": "*"
-    "@acme/tsconfig": 0.0.0
+    "@acme/tsconfig": "*"
     "@storybook/addon-a11y": ^7.0.12
     "@storybook/addon-essentials": ^7.0.12
     "@storybook/addon-interactions": ^7.0.12
@@ -65,7 +65,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@acme/tsconfig@*, @acme/tsconfig@0.0.0, @acme/tsconfig@workspace:packages/acme-tsconfig":
+"@acme/tsconfig@*, @acme/tsconfig@workspace:packages/acme-tsconfig":
   version: 0.0.0-use.local
   resolution: "@acme/tsconfig@workspace:packages/acme-tsconfig"
   languageName: unknown
@@ -6278,7 +6278,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-acme@*, eslint-config-acme@0.0.0, eslint-config-acme@workspace:packages/eslint-config-acme":
+"eslint-config-acme@*, eslint-config-acme@workspace:packages/eslint-config-acme":
   version: 0.0.0-use.local
   resolution: "eslint-config-acme@workspace:packages/eslint-config-acme"
   dependencies:
@@ -10884,7 +10884,7 @@ eslint-config-turbo@latest:
   dependencies:
     "@changesets/cli": ^2.25.2
     eslint: ^8.29.0
-    eslint-config-acme: 0.0.0
+    eslint-config-acme: "*"
     prettier: ^2.8.0
     turbo: latest
   languageName: unknown
